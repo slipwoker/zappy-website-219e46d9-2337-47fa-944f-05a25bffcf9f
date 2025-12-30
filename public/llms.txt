@@ -1,0 +1,59 @@
+# Arik Yakobov Diamonds & Jewelry — Generative Engine Optimization Map
+
+> A תכשיטים ואופנה business.
+
+---
+
+## Pages
+
+### בית
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app
+גלו עיצוב תכשיטים אישי יוקרתי עם יהלומים מעוצבים. התאמה אישית מושלמת לאירועים מיוחדים וטבעות אירוסין ייחודיות.
+
+### השירותים שלנו
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/services
+גלו את מגוון שירותי עיצוב תכשיטים אישי שלנו: טבעות אירוסין יהלומים מעוצבות, תכשיטי זהב ליום יום ולאירועים מיוחדים.
+
+### אודות
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/about
+למדו על Arik Yakobov Diamonds & Jewelry - מומחים בעיצוב תכשיטים אישי ויצירת תכשיטי זהב ויהלומים יוקרתיים עם מסורת של מצוינות.
+
+### צור קשר
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/contact
+צרו קשר עם Arik Yakobov Diamonds & Jewelry לייעוץ בעיצוב תכשיטים אישי, טבעות אירוסין יהלומים מעוצבות ותכשיטי זהב ויהלומים יוקרתיים.
+
+## Legal & Policy
+
+### Privacy Policy
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Arik Yakobov Diamonds & Jewelry
+Arik Yakobov Diamonds & Jewelry is a business in the תכשיטים ואופנה industry.
+
+## Target Audience
+- משתתפי אירועים יוקרתיים
+- מחפשי טבעות אירוסין
+- חובבי תכשיטים בעיצוב אישי
+
+## Industry
+תכשיטים ואופנה
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/sitemap.xml
+- **Robots.txt**: https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/robots.txt

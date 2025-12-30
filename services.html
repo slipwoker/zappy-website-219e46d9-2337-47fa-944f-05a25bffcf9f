@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>תכשיטי זהב ויהלומים מעוצבים במיוחד — Arik Yakobov Diamonds & Jewelry</title>
+<meta name="description" content="גלו את מגוון שירותי עיצוב תכשיטים אישי שלנו: טבעות אירוסין יהלומים מעוצבות, תכשיטי זהב ליום יום ולאירועים מיוחדים.">
+<meta name="keywords" content="תכשיטי זהב ויהלומים, עיצוב תכשיטים אישי, טבעות אירוסין יהלומים מעוצבות, יהלומים">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '219e46d9-2337-47fa-944f-05a25bffcf9f',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+<nav class="navbar" id="navbar">
+<div class="container nav-container">
+<div class="nav-brand">
+<a href="/" class="logo-link">
+<img src="/assets/arik-yakobov-diamonds-jewelry-logo.webp" alt="Arik Yakobov Diamonds &amp; Jewelry" class="logo">
+</a>
+</div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="פתח תפריט">
+<svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+<svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+<path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+</button>
+<button class="phone-header-btn" aria-label="התקשר אלינו">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</button>
+<ul class="nav-menu" id="navMenu">
+<li><a href="/services">השירותים שלנו</a></li>
+<li><a href="/about">אודות</a></li>
+</ul>
+<div class="nav-cta-container">
+<li class="nav-cta-item"><a href="/contact" class="nav-cta-btn">צור קשר</a></li>
+</div>
+</div>
+</nav>
+<section class="page-header">
+<div class="container">
+<h1>תכשיטי זהב ויהלומים מעוצבים במיוחד עבורך</h1>
+<h3>מגוון שירותים מקצועיים ליצירת תכשיטים ייחודיים שמשקפים את הסגנון והאישיות שלך</h3>
+</div>
+</section>
+<section class="section service-section" id="טבעות-אירוסין-יהלומים-מעוצבות" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+<div class="service-detail-content">
+<h2>טבעות אירוסין יהלומים מעוצבות</h2>
+<p>רגע ההצעה הוא אחד הרגעים המיוחדים והמרגשים ביותר בחיים, והטבעת צריכה לשקף את הייחודיות של הרגע הזה. אנחנו ב-Arik Yakobov Diamonds &amp; Jewelry מתמחים ביצירת טבעות אירוסין יהלומים מעוצבות שמשלבות את הסגנון האישי שלכם עם איכות יהלומים יוצאת דופן.</p>
+<p>תהליך עיצוב תכשיטים אישי שלנו מתחיל בפגישת ייעוץ אישית, בה אנו מקשיבים לחזון שלכם ומבינים את ההעדפות, הסגנון והתקציב. לאחר מכן, אנו מציגים מגוון אפשרויות של יהלומים מהמדרגה הגבוהה ביותר, כולל הסברים מפורטים על הצבע, הטוהר, הליטוש והקראט של כל יהלום.</p>
+<p>העיצוב עצמו נעשה בשיתוף פעולה מלא איתכם – מבחירת סגנון הטבעת (קלאסי, מודרני, וינטג' או עכשווי), דרך בחירת סוג הזהב (זהב צהוב, לבן או רוז), ועד לפרטים הקטנים ביותר כמו חריטות אישיות או אבנים נוספות. התוצאה היא טבעת אירוסין ייחודית שמספרת את הסיפור שלכם ושתישאר איתכם לנצח.</p>
+</div>
+<div class="service-detail-image">
+<img data-placeholder="service-4" data-context="Close-up of stunning diamond engagement ring with intricate band design on elegant display with soft romantic lighting" src="/assets/arik-yakobov-diamonds-jewelry-service-service-4.webp" alt="טבעת אירוסין יהלומים מעוצבת עם עיצוב מורכב ומרשים">
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="תכשיטי-זהב-ויהלומים-לאירועים-מיוחדים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+<div class="service-detail-image">
+<img data-placeholder="service-5" data-context="Elegant woman wearing luxurious diamond necklace and matching earrings at formal gala event" src="/assets/arik-yakobov-diamonds-jewelry-service-service-5.webp" alt="אישה מרשימה עם שרשרת יהלומים ועגילים תואמים באירוע יוקרתי">
+</div>
+<div class="service-detail-content">
+<h2>תכשיטי זהב ויהלומים לאירועים מיוחדים</h2>
+<p>אירועים יוקרתיים, חתונות, נשפים ותערוכות אומנות דורשים תכשיטים שמושכים את העין ומשדרים אלגנטיות ויוקרה. אנו מתמחים ביצירת תכשיטי זהב ויהלומים מרהיבים שמותאמים במיוחד לאירועים אלו, כך שתוכלו להרגיש בטוחים ומרשימים בכל רגע.</p>
+<p>המגוון שלנו כולל שרשראות יהלומים מרהיבות, עגילים מעוצבים, צמידים אלגנטיים וסיכות ייחודיות. כל תכשיט נוצר תוך שימת דגש על איזון מושלם בין הברק של היהלומים לבין העיצוב האמנותי של הזהב, כדי ליצור יצירה שמשלימה את המראה שלכם ומדגישה את היופי הטבעי.</p>
+<p>אנו מציעים גם שירות של התאמה אישית לתכשיטים קיימים – אם יש לכם תכשיט משפחתי שאתם רוצים לשדרג או לעצב מחדש, אנו יכולים לעזור לכם להפוך אותו למשהו מודרני ומרשים יותר, תוך שמירה על הערך הרגשי והמסורתי שלו.</p>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="עיצוב-תכשיטים-אישי-מותאם-לחלוטין" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+<div class="service-detail-content">
+<h2>עיצוב תכשיטים אישי מותאם לחלוטין</h2>
+<p>האם יש לכם חזון לתכשיט מושלם שלא מצאתם בשום מקום? שירות עיצוב תכשיטים אישי שלנו הוא בדיוק בשביל זה. אנו הופכים את הרעיונות והחלומות שלכם למציאות מוחשית, תוך שימת דגש על כל פרט קטן שהופך את התכשיט לייחודי באמת.</p>
+<p>התהליך מתחיל בשיחה מעמיקה על החזון שלכם – מה אתם מחפשים, איזה סגנון אתם אוהבים, לאיזה מטרה התכשיט מיועד (יום יום, אירועים, מתנה מיוחדת), ומה התקציב שלכם. לאחר מכן, אנו יוצרים סקיצות ראשוניות ומציגים לכם אפשרויות שונות, כולל בחירת סוגי הזהב (14K, 18K או 24K), סוגי היהלומים, ואבנים יקרות נוספות אם תרצו.</p>
+<p>לאחר אישור העיצוב, אנו מתחילים בתהליך היצירה המדויק. הצורפים המיומנים שלנו משתמשים בטכניקות מסורתיות ומודרניות כאחד כדי ליצור תכשיט באיכות הגבוהה ביותר. לאורך כל התהליך, אתם מעורבים ויכולים לראות את התקדמות העבודה ולבצע שינויים אם צריך. התוצאה הסופית היא יצירת אמנות אישית שמשקפת בדיוק את הסגנון והאישיות שלכם.</p>
+</div>
+<div class="service-detail-image">
+<img data-placeholder="service-6" data-context="Skilled jeweler working on custom gold bracelet design at workbench with precision tools and gemstones" src="/assets/arik-yakobov-diamonds-jewelry-service-service-6.webp" alt="צורף מיומן עובד על עיצוב צמיד זהב מותאם אישית עם כלים מדויקים">
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="תכשיטי-זהב-ליום-יום" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+<div class="service-detail-image">
+<img data-placeholder="service-7" data-context="Collection of elegant everyday gold jewelry pieces including delicate necklaces, bracelets and rings displayed artistically" src="/assets/arik-yakobov-diamonds-jewelry-service-service-7.webp" alt="אוסף תכשיטי זהב אלגנטיים ליום יום כולל שרשראות, צמידים וטבעות">
+</div>
+<div class="service-detail-content">
+<h2>תכשיטי זהב ליום יום</h2>
+<p>לא כל תכשיט צריך להיות מיועד רק לאירועים מיוחדים. אנו מציעים גם מגוון רחב של תכשיטי זהב ויהלומים לשימוש יומיומי, שמשלבים אלגנטיות ופשטות בעיצוב מתוחכם שמתאים לכל סגנון חיים.</p>
+<p>התכשיטים ליום יום שלנו כוללים שרשראות עדינות עם תליונים מינימליסטיים, צמידים דקיקים, עגילי זהב קטנים וטבעות פשוטות אך מעוצבות. כל תכשיט נוצר מזהב איכותי (14K או 18K) ויכול לכלול יהלומים קטנים או אבני חן נוספות לנגיעה של זוהר.</p>
+<p>המטרה שלנו היא ליצור תכשיטים שאפשר ללבוש כל יום, שמתאימים לסגנון האישי שלכם ושמוסיפים נופך של אלגנטיות למראה היומיומי. אנו גם מציעים שירות של עיצוב תכשיטים אישי לתכשיטי יום יום, כך שתוכלו ליצור משהו שמשקף בדיוק את מה שאתם מחפשים.</p>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="שיקום-ושדרוג-תכשיטים-קיימים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+<div class="service-detail-content">
+<h2>שיקום ושדרוג תכשיטים קיימים</h2>
+<p>לפעמים, התכשיטים היקרים ביותר הם אלו שיש להם ערך רגשי ומסורתי – תכשיטים משפחתיים שעברו מדור לדור, או תכשיטים שקיבלתם במתנה ברגעים מיוחדים. אנו מציעים שירות מקצועי של שיקום ושדרוג תכשיטים קיימים, כך שתוכלו להמשיך ללבוש אותם ולהנות מהם לאורך שנים רבות.</p>
+<p>השירות כולל ניקוי מקצועי של יהלומים וזהב, תיקון נזקים (כמו שריטות, שברים או אבנים שנפלו), שינוי גודל של טבעות, החלפת אבנים פגומות ביהלומים חדשים, ועיצוב מחדש של תכשיטים ישנים לסגנון מודרני יותר.</p>
+<p>התהליך נעשה בקפידה רבה, תוך שמירה על הערך המקורי של התכשיט ועל המשמעות הרגשית שלו. אנו מבינים שתכשיטים אלו הם לא רק אביזרים אלא חלק מהזיכרונות והמסורת המשפחתית, ולכן אנו מתייחסים אליהם בכבוד ובמקצועיות הגבוהה ביותר.</p>
+</div>
+<div class="service-detail-image">
+<img data-placeholder="service-8" data-context="Before and after comparison of restored vintage diamond ring showing transformation from worn to brilliant" src="/assets/arik-yakobov-diamonds-jewelry-service-service-8.webp" alt="השוואת לפני ואחרי של טבעת יהלומים וינטג' משוקמת">
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="תכשיטים-כמתנה-מיוחדת" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+<div class="service-detail-image">
+<img data-placeholder="service-9" data-context="Luxury gift box containing custom-designed jewelry piece with elegant presentation and certificate of authenticity" src="/assets/arik-yakobov-diamonds-jewelry-service-service-9.webp" alt="קופסת מתנה יוקרתית עם תכשיט מעוצב במיוחד ותעודת אמינות">
+</div>
+<div class="service-detail-content">
+<h2>תכשיטים כמתנה מיוחדת</h2>
+<p>מחפשים מתנה מושלמת ליקירכם? תכשיט מעוצב במיוחד הוא אחת המתנות הכי משמעותיות ובלתי נשכחות שאפשר לתת. אנו מציעים שירות מלא של עיצוב תכשיטים אישי למתנות, כולל ייעוץ אישי, עיצוב מותאם ואריזה יוקרתית.</p>
+<p>בין אם מדובר במתנה ליום הולדת, יום נישואין, סיום לימודים, קידום בעבודה או כל אירוע מיוחד אחר, אנו יכולים לעזור לכם ליצור תכשיט שמספר סיפור ושמשדר את הרגשות שלכם. אפשר להוסיף חריטות אישיות, לבחור אבנים בצבעים מיוחדים שמסמלים משהו חשוב, או לעצב תכשיט שמשקף את תחומי העניין של האדם שמקבל את המתנה.</p>
+<p>כל תכשיט מגיע באריזה יוקרתית מעוצבת, עם תעודת אמינות ואחריות מלאה. אנו גם מציעים שירות של עטיפת מתנות מיוחדת וכרטיס ברכה אישי, כדי שהמתנה תהיה מושלמת בכל פרט.</p>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="process-section">
+<div class="container">
+<h2>תהליך עיצוב תכשיטים אישי שלנו</h2>
+<div class="process-steps">
+<div class="process-step">
+<div class="step-number">1</div>
+<h3>ייעוץ ראשוני</h3>
+<p>פגישה אישית להבנת החזון, ההעדפות והתקציב שלכם</p>
+</div>
+<div class="process-step">
+<div class="step-number">2</div>
+<h3>בחירת חומרים</h3>
+<p>בחירת יהלומים, זהב ואבנים יקרות מתוך מגוון איכותי</p>
+</div>
+<div class="process-step">
+<div class="step-number">3</div>
+<h3>עיצוב ותכנון</h3>
+<p>יצירת סקיצות ועיצובים מפורטים לאישורכם</p>
+</div>
+<div class="process-step">
+<div class="step-number">4</div>
+<h3>יצירה וליטוש</h3>
+<p>עבודת צורפות מקצועית ליצירת התכשיט המושלם</p>
+</div>
+<div class="process-step">
+<div class="step-number">5</div>
+<h3>מסירה ואחריות</h3>
+<p>קבלת התכשיט עם תעודת אמינות ואחריות מלאה</p>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-section">
+<div class="container">
+<div class="cta-content">
+<h2>מוכנים להתחיל את תהליך העיצוב?</h2>
+<p>צרו קשר עכשיו לייעוץ אישי ללא התחייבות ונתחיל ליצור את תכשיטי זהב ויהלומים המושלמים עבורכם</p>
+<a href="/contact" class="btn-primary">צור קשר לייעוץ</a>
+</div>
+</div>
+</section>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 Arik Yakobov Diamonds & Jewelry. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '219e46d9-2337-47fa-944f-05a25bffcf9f';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>
