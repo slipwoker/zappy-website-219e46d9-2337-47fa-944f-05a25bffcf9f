@@ -1,6 +1,4 @@
-# Arik Yakobov Diamonds & Jewelry — Generative Engine Optimization Map
-
-> A תכשיטים ואופנה business.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,17 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Arik Yakobov Diamonds & Jewelry
-Arik Yakobov Diamonds & Jewelry is a business in the תכשיטים ואופנה industry.
-
-## Target Audience
-- משתתפי אירועים יוקרתיים
-- מחפשי טבעות אירוסין
-- חובבי תכשיטים בעיצוב אישי
-
-## Industry
-תכשיטים ואופנה
-
+## About Business
 ---
 
 # Additional Resources
