@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arik-yakobov-diamonds-jewelry-219e46d9.zappy5.app/sitemap.xml
+Sitemap: https://example.com/sitemap.xml
