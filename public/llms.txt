@@ -1,59 +1,47 @@
-# Arik Yakobov Diamonds & Jewelry — Generative Engine Optimization Map
-
-> A תכשיטים ואופנה business.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### בית
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com
+https://arik-yakobov.co.il
 גלו עיצוב תכשיטים אישי יוקרתי עם יהלומים מעוצבים. התאמה אישית מושלמת לאירועים מיוחדים וטבעות אירוסין ייחודיות.
 
 ### השירותים שלנו
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/services
+https://arik-yakobov.co.il/services
 גלו את מגוון שירותי עיצוב תכשיטים אישי שלנו: טבעות אירוסין יהלומים מעוצבות, תכשיטי זהב ליום יום ולאירועים מיוחדים.
 
 ### אודות
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/about
+https://arik-yakobov.co.il/about
 למדו על Arik Yakobov Diamonds & Jewelry - מומחים בעיצוב תכשיטים אישי ויצירת תכשיטי זהב ויהלומים יוקרתיים עם מסורת של מצוינות.
 
 ### צור קשר
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/contact
+https://arik-yakobov.co.il/contact
 צרו קשר עם Arik Yakobov Diamonds & Jewelry לייעוץ בעיצוב תכשיטים אישי, טבעות אירוסין יהלומים מעוצבות ותכשיטי זהב ויהלומים יוקרתיים.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/privacy
+https://arik-yakobov.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/terms
+https://arik-yakobov.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/accessibility
+https://arik-yakobov.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Arik Yakobov Diamonds & Jewelry
-Arik Yakobov Diamonds & Jewelry is a business in the תכשיטים ואופנה industry.
-
-## Target Audience
-- משתתפי אירועים יוקרתיים
-- מחפשי טבעות אירוסין
-- חובבי תכשיטים בעיצוב אישי
-
-## Industry
-תכשיטים ואופנה
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/sitemap.xml
-- **Robots.txt**: https://zappy-site-219e46d9-2337-47fa-944f.onrender.com/robots.txt
+- **Sitemap**: https://arik-yakobov.co.il/sitemap.xml
+- **Robots.txt**: https://arik-yakobov.co.il/robots.txt
